@@ -1,0 +1,128 @@
+/* Ensure action column is wide enough for two buttons */
+.table td.action-col, .table th.action-col {
+    min-width: 140px;
+    width: 1%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* Add spacing between action buttons */
+.action-btn {
+    margin: 0 4px;
+}
+body {
+    background: linear-gradient(135deg, #232526 0%, #414345 100%) !important;
+    min-height: 100vh;
+    color: #f8f9fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+
+.navbar {
+    background: linear-gradient(90deg, #007bff 0%, #0056b3 100%) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.7rem;
+    justify-self: center;
+    align-self: center;
+    margin-left: 48%;
+    text-align: center;
+}
+
+.container {
+    background: rgba(34, 40, 49, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    padding: 2rem 2.5rem;
+    margin-top: 2rem;
+}
+
+.container h2 {
+    color: #fff;
+}
+h2 {
+    color: #00d4ff;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+label.form-label {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+
+.form-control {
+    background: #181c20;
+    color: #00d4ff;
+    border: 1.5px solid #00d4ff;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus {
+    background: #23272b;
+    color: #fff;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.15);
+}
+
+.form-control::placeholder {
+    color: #7fdfff;
+    opacity: 1;
+}
+
+.form-control:focus {
+    background: #23272b;
+    color: #fff;
+    border-color: #00d4ff;
+    box-shadow: 0 0 0 0.2rem rgba(0,212,255,.15);
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #00d4ff 0%, #007bff 100%);
+    border: none;
+    color: #232526;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #007bff 0%, #00d4ff 100%);
+    color: #fff;
+}
+
+table.table {
+    background: rgba(34, 40, 49, 0.98);
+    color: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 1.5rem;
+}
+
+th, td {
+    background: transparent !important;
+    color: #f8f9fa !important;
+    vertical-align: middle;
+}
+
+thead th {
+    color: #00d4ff !important;
+    font-weight: 600;
+    border-bottom: 2px solid #00d4ff;
+}
+
+.alert-info {
+    background: linear-gradient(90deg, #00d4ff 0%, #007bff 100%);
+    color: #232526;
+    border: none;
+    font-weight: 500;
+    border-radius: 6px;
+}

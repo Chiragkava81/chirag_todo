@@ -1,15 +1,4 @@
-/* Ensure action column is wide enough for two buttons */
-.table td.action-col, .table th.action-col {
-    min-width: 140px;
-    width: 1%;
-    white-space: nowrap;
-    text-align: center;
-}
-
-/* Add spacing between action buttons */
-.action-btn {
-    margin: 0 4px;
-}
+/* Body & Typography */
 body {
     background: linear-gradient(135deg, #232526 0%, #414345 100%) !important;
     min-height: 100vh;
@@ -17,7 +6,7 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-
+/* Navbar */
 .navbar {
     background: linear-gradient(90deg, #007bff 0%, #0056b3 100%) !important;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -28,12 +17,10 @@ body {
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 1.7rem;
-    justify-self: center;
-    align-self: center;
-    margin-left: 48%;
     text-align: center;
 }
 
+/* Container cards */
 .container {
     background: rgba(34, 40, 49, 0.95);
     border-radius: 12px;
@@ -42,21 +29,20 @@ body {
     margin-top: 2rem;
 }
 
-.container h2 {
-    color: #fff;
-}
+/* Headings */
 h2 {
     color: #00d4ff;
     margin-bottom: 1.5rem;
     font-weight: 500;
 }
 
+/* Labels */
 label.form-label {
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-weight: 500;
 }
 
-
+/* Form inputs */
 .form-control {
     background: #181c20;
     color: #00d4ff;
@@ -69,8 +55,8 @@ label.form-label {
 .form-control:focus {
     background: #23272b;
     color: #fff;
-    border-color: #007bff;
-    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.15);
+    border-color: #00d4ff;
+    box-shadow: 0 0 0 0.2rem rgba(0,212,255,.15);
 }
 
 .form-control::placeholder {
@@ -78,13 +64,7 @@ label.form-label {
     opacity: 1;
 }
 
-.form-control:focus {
-    background: #23272b;
-    color: #fff;
-    border-color: #00d4ff;
-    box-shadow: 0 0 0 0.2rem rgba(0,212,255,.15);
-}
-
+/* Buttons */
 .btn-primary {
     background: linear-gradient(90deg, #00d4ff 0%, #007bff 100%);
     border: none;
@@ -97,6 +77,11 @@ label.form-label {
 .btn-primary:hover {
     background: linear-gradient(90deg, #007bff 0%, #00d4ff 100%);
     color: #fff;
+}
+
+/* Tables */
+.table-responsive {
+    overflow-x: auto;
 }
 
 table.table {
@@ -119,10 +104,23 @@ thead th {
     border-bottom: 2px solid #00d4ff;
 }
 
+/* Alerts */
 .alert-info {
     background: linear-gradient(90deg, #00d4ff 0%, #007bff 100%);
     color: #232526;
     border: none;
     font-weight: 500;
     border-radius: 6px;
+}
+
+/* Action buttons in table */
+.table td.action-col, .table th.action-col {
+    min-width: 140px;
+    width: 1%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.action-btn {
+    margin: 0 4px;
 }
